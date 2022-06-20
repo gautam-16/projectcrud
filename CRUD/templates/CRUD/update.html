@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPDATE</title>
+</head>
+<body>
+<h>Enter the data that you want to replaced</h>
+<br>
+<form method="POST" action="{% url 'update' %}">
+        {% csrf_token %}
+    <br>
+    <label>Enter ID</label>
+    <br>
+    <input type="text" name="a" required></label>
+      <br>
+    <label> Enter Contact Info
+        <br>
+     <input type="text" name="b" required></label>
+<br>
+    <br>
+<h>Enter the data that you want to replace to be replaced with</h>
+    <br>
+    <br>
+    <br>
+    <label>Enter ID</label>
+    <br>
+    <input type="text" name="c"></label>
+      <br>
+    <label> Enter Contact Info
+        <br>
+     <input type="text" name="d">
+    </label>
+       <input type="submit" value="Submit">
+    </form>
+ </body>
+ </html>

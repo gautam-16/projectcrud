@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+This is the Create HTML
+<!---<form method="POST" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p><label>Employee ID<input type="text" name="Employee_ID" required></label></p>
+<p><label> Employee Phone Number<input type="tel" name="phone_number"></label></p>
+    <p><button type="POST" onclick="href='read.html'">Submit Data</button></p>
+    --->
+<form action="{% url 'create' %} " method="post">
+    {% csrf_token %}
+    <label>Enter ID</label>
+    <input type="text" name="a" required ></label>
+      <br>
+    <label> Enter Contact Info
+     <input type="text" name="b" required >
+    <input type="submit" value="Submit">
+    </label>
+</form>
+</body>
+</html>

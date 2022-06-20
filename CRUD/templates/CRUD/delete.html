@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>This is delete HTML file
+</head>
+<body>
+
+<form method="POST" action="{% url 'delete' %}">
+        {% csrf_token %}
+<br>
+    <h3>Delete Details</h3>
+    <label class="col-sm-2 col-form-label">Employee ID:</label>
+    <input type="text" name="a"  >
+    </div>
+<button>Delete</button>
+</form>
+</body>
+</html>
