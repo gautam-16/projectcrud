@@ -8,30 +8,35 @@
 <h>Enter the data that you want to replaced</h>
 <br>
 <form method="POST" action="{% url 'update' %}">
-        {% csrf_token %}
+    {% csrf_token %}
     <br>
     <label>Enter ID</label>
     <br>
-    <input type="text" name="a" required></label>
-      <br>
-    <label> Enter Contact Info
+    <label>
+        <input type="text" name="a" required>
+    </label>
+
+    <br>
+    <label> Enter Contact Info</label>
         <br>
-     <input type="text" name="b" required></label>
-<br>
-    <br>
-<h>Enter the data that you want to replace to be replaced with</h>
-    <br>
+    <label>
+        <input type="text" name="b" required>
+    </label>
     <br>
     <br>
-    <label>Enter ID</label>
+    <h>Enter the data that you want to replace to be replaced with</h>
+    <br>
+    <br>
+    <br>
+    <label>Enter ID
     <br>
     <input type="text" name="c"></label>
-      <br>
+    <br>
     <label> Enter Contact Info
         <br>
-     <input type="text" name="d">
+        <input type="text" name="d">
     </label>
-       <input type="submit" value="Submit">
-    </form>
- </body>
- </html>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
